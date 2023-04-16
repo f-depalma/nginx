@@ -54,4 +54,4 @@ jobs:
             sudo docker pull fdepalma95/nginx
             sudo docker stop nginx
             sudo docker rm nginx
-            sudo docker run --detach --name nginx -p 80:80 -d -v /root/nginx/conf:/etc/nginx/conf.d --net=host fdepalma95/nginx
+            sudo docker run --detach --name nginx -d -v /root/nginx/conf:/etc/nginx/conf.d --net=host fdepalma95/nginx
